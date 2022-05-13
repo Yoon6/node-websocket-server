@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Websocket Chatting</title>
+</head>
+<body>
+<h1>Hello Express</h1>
+<button onClick="sayHi()">Say Hi</button>
+
+<script>
+    const ws = new WebSocket("ws://localhost:8001");
+    function sayHi() {
+        ws.send("Hello");
+    }
+</script>
+</body>
+</html>
